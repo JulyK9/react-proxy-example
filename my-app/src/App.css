@@ -1,11 +1,15 @@
 body, html {
   margin: 0;
   height:100%; 
-  overflow:hidden;
+  overflow:scroll;
   background-color: rgb(58, 58, 58);
 }
 
 .main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   margin: 0;
   height: 100vh;
   background-color: #fff;

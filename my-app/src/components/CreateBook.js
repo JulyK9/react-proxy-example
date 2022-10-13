@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const CreateBook = ({ onChangeForm, handleSubmit }) => {
+const CreateBook = ({ handleBookSubmit, handleBookOnChangeForm }) => {
 
 
     return(
@@ -12,7 +12,7 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                         <label>book</label>
                         <input 
                             type="text" 
-                            onChange={(e) => onChangeForm(e)} 
+                            onChange={(e) => handleBookOnChangeForm(e)} 
                             name="book" 
                             placeholder="book" 
                         />
@@ -21,7 +21,7 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                         <label>category</label>
                         <input 
                             type="text" 
-                            onChange={(e) => onChangeForm(e)} 
+                            onChange={(e) => handleBookOnChangeForm(e)} 
                             name="category" 
                             placeholder="category" 
                         />
@@ -30,14 +30,14 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                         <label>author</label>
                         <input 
                             type="text" 
-                            onChange={(e) => onChangeForm(e)} 
+                            onChange={(e) => handleBookOnChangeForm(e)} 
                             name="author"
                             placeholder="author" 
                         />
                     </div>
                     <button 
                         className="submit-button"
-                        onClick= {() => handleSubmit()}
+                        onClick= {() => handleBookSubmit()}
                     >Submit
                     </button>
                 </form>
